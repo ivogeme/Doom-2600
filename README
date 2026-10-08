@@ -1,0 +1,78 @@
+🕹️ Doom 2600
+
+Um experimento de FPS inspirado em Doom para o Atari 2600 original, desenvolvido em Assembly 6502.
+
+📖 Sobre o projeto
+
+E se fosse possível criar uma experiência de tiro em primeira pessoa para o Atari 2600 original?
+
+Essa pergunta deu origem ao Doom 2600, um projeto experimental que explora os limites do console clássico da Atari, utilizando Assembly e técnicas de renderização simplificadas para simular uma perspectiva tridimensional.
+
+A ideia surgiu ao observar como jogos e tecnologias são adaptados para plataformas inesperadas. O objetivo é investigar até onde podemos levar um conceito de FPS em um hardware extremamente limitado.
+
+Este projeto é independente e não é um porte oficial do Doom original.
+
+⚙️ Plataforma e tecnologias
+
+- Console-alvo: Atari 2600 original
+- Processador: MOS 6507
+- Linguagem: Assembly 6502
+- Montador: DASM
+- Vídeo e áudio: TIA (Television Interface Adaptor)
+
+🎮 Recursos do protótipo
+
+- Mapa de jogo em uma grade de 8×8 células.
+- Posição e direção do jogador.
+- Movimentação com verificação de colisões.
+- Rotação em quatro direções.
+- Raycast simplificado de um único raio.
+- Efeito de perspectiva baseado na distância até as paredes.
+- Disparo com efeito sonoro.
+- Renderização utilizando os recursos gráficos do Atari 2600.
+
+🧪 Estado do desenvolvimento
+
+O projeto está em fase de protótipo experimental.
+
+A versão atual estabelece a base da movimentação, da colisão, da consulta ao mapa e da renderização simplificada. O código já foi executado pelo autor em uma máquina virtual.
+
+Ainda existem limitações visuais e funcionais. O protótipo não possui um sistema completo de renderização 3D e não reproduz integralmente a jogabilidade do Doom original.
+
+🚀 Planos futuros
+
+- Explorar a renderização com múltiplos raios.
+- Melhorar a perspectiva das paredes.
+- Adicionar diferentes tipos de ambientes.
+- Desenvolver sprites e inimigos.
+- Implementar uma arma visível e animações de disparo.
+- Explorar sistemas de vida, munição e HUD.
+- Otimizar o código para as limitações do Atari 2600.
+
+As funcionalidades futuras dependem da viabilidade técnica e dos recursos disponíveis no console.
+
+🛠️ Compilação
+
+Para compilar o código, é necessário ter o DASM e os arquivos de inclusão "vcs.h" e "macro.h" compatíveis com o ambiente.
+
+Exemplo de comando:
+
+dasm doom2600.asm -f3 -odoom2600.bin -ldoom2600.lst -sdoom2600.sym
+
+Depois da compilação, a ROM poderá ser testada em um emulador compatível com o Atari 2600, como o Stella.
+
+O comando e o resultado devem ser verificados no ambiente de desenvolvimento utilizado.
+
+📜 Licença
+
+A licença deste projeto será definida pelo autor no repositório.
+
+👨‍💻 Autor
+
+Projeto independente criado para explorar programação de baixo nível, desenvolvimento de jogos retrô e os limites do hardware clássico.
+
+A proposta é simples: descobrir até onde o Atari 2600 original pode chegar.
+
+---
+
+Projeto experimental inspirado no gênero FPS e em Doom. Não afiliado à id Software ou à Bethesda. Doom é uma propriedade de seus respectivos titulares.
